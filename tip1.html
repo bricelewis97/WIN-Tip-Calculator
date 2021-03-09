@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tip1.css">
+    <title>Tip Calculator v0.2</title>
+</head>
+<body>
+        <div id = "container">
+            <div class="wrapper">
+                <h1>TIP CALCULATOR</h1>
+        <p>Pre-Tip Bill: </p>
+        <input id="bill_amount" type="number">
+        <p>How was your service?</p>
+        <form>
+        <input type="radio" name="tip_choice" id="tip_15" value=15>Good (15% Tip)<br>
+        <input type="radio" name="tip_choice" id="tip_20" value=20>Great (20% Tip)<br>
+        <input type="radio" name="tip_choice" id="tip_25" value=25>Fantastic (25% Tip)<br>
+        <input type="radio" name="tip_choice" id="tip_30" value=30>Exceptional (30% Tip)<br>
+        <input type="radio" name="tip_choice" id="tip_custom" value=0>Custom Tip (Below)<br>
+        </form>
+        <br>
+        <p>Additional/Custom Tip (in Dollars)</p>
+        <input id="extra_tip" type="number" value=0>
+        <p>Number of Guests: </p>
+        <input id="guest_count" type="number">
+        <br>
+        <p>Tip Amount: </p>
+        <input id="tip_amount" >
+        <br>
+        <p>Total Bill: </p>
+        <input id="total_bill" >
+        <br>
+        <p>Per Guest (Tip Inlcuded): </p>
+        <input id="per_person" >
+        <br>
+        <button id="btn">Calculate</button>
+            </div>
+    </div>
+    <script src="tip1.js"></script>
+</body>
+</html>
